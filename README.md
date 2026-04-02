@@ -1,4 +1,4 @@
-# hospital-perfromance-analysis
+# hospital-performance-analysis
 # 🏥 Hospital Analytics Dashboard
 **Tools:** SQL Server · Power BI · DAX · Power Query
 
@@ -15,7 +15,7 @@ A comprehensive end-to-end data analysis project on a hospital dataset covering 
 | Average Claim Cost | $3.64K |
 | Average Base Cost | $2.21K |
 | Readmission Rate | 79% |
-| Zero Payer Coverage | 13,586 encounters (48.7%) |
+| Zero Payer Coverage | 13,586 encounters (47%) |
 
 ---
 
@@ -54,7 +54,7 @@ The dataset contains 5 interconnected tables:
 
 - **ICU admissions** were the most expensive procedure at over **$200,000** average base cost
 - **Medicaid** had the highest average claim cost among all payers, followed by uninsured patients
-- **48.7% of encounters (13,586)** had zero payer coverage — a significant financial risk
+- **47% of encounters (13,586)** had zero payer coverage — a significant financial risk
 - **Ambulatory** was the most common encounter class across all years
 - **99.75%** of encounters lasted **under 24 hours** — consistent with the predominantly ambulatory visit pattern
 - **Q1 2021** recorded the highest number of unique patient admissions
@@ -151,7 +151,7 @@ hospital-analytics/
 
 ## 💡 Recommendations
 
-1. Review the **48.7% zero payer coverage** encounters — a major financial risk area
+1. Review the **47% zero payer coverage** encounters — a major financial risk area
 2. Investigate the **80% readmission rate** and implement improved discharge planning
 3. Conduct a **case management review** for patient Kimberly Collier (1,375 readmissions)
 4. Explore **cost reduction strategies** for ICU admissions averaging $200,000+
