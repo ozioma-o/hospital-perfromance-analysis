@@ -24,8 +24,8 @@ The dataset contains 5 interconnected tables:
 
 | Table | Description |
 |-------|-------------|
-| **Patients** | 800 unique patient records with demographics |
-| **Encounters** | 28,000 hospital visit records including costs and dates |
+| **Patients** | 974 unique patient records with demographics |
+| **Encounters** | 28,891 hospital visit records including costs and dates |
 | **Procedures** | Medical procedures performed and their base costs |
 | **Payers** | Insurance payer information |
 | **Organization** | Hospital organization details |
@@ -123,10 +123,10 @@ ORDER BY AVG(BASECOST) DESC;
 | Encounter Class Distribution | Stacked Bar Chart | Ambulatory dominates across all years |
 | Encounter Duration | Donut Chart | 99.75% lasted under 24 hours |
 | Zero Payer Coverage | Card Visual | 13,586 encounters with no coverage |
-| Top 10 Procedures by Base Cost | Bar Chart | ICU leads at $200,000+ |
+| Top 10 Procedures by Base Cost |Stacked Bar Chart | ICU leads at $200,000+ |
 | Avg Claim Cost by Payer | Bar Chart | Medicaid has highest claim costs |
 | Quarterly Patient Admissions | Line Chart | Q1 2021 peak admissions |
-| Most Readmitted Patients | Bar Chart | Kimberly Collier leads with 1,375 readmissions |
+| Most Readmitted Patients | Stacked Bar Chart | Kimberly Collier leads with 1,375 readmissions |
 
 ---
 
@@ -134,18 +134,6 @@ ORDER BY AVG(BASECOST) DESC;
 
 - **Patient name encoding:** Some patient names with special characters display incorrectly due to VARCHAR encoding issues in the original dataset
 - **Readmissions slicer:** The Most Readmitted Patients chart displays overall totals rather than year-filtered results due to relationship complexity
-- **Duration metric:** The 99.75% under 24 hours figure should be interpreted carefully as encounter duration recording methodology may vary across the dataset
-
----
-
-## 📁 Repository Contents
-
-```
-hospital-analytics/
-├── README.md                                    ← You are here
-├── HospitalAnalysis.sql                         ← All SQL queries
-└── HospitalAnalytics_ProjectDocumentation.docx  ← Full project report
-```
 
 ---
 
@@ -159,5 +147,5 @@ hospital-analytics/
 
 ---
 
-*Part of my Data Analytics Portfolio → [View All Projects](https://github.com/yourusername)*
+*Part of my Data Analytics Portfolio → [View All Projects](https://github.com/ozioma-o)*
 
